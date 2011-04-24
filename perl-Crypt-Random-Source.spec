@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 4
 
 Summary:    Base class for random devices
 License:    GPL+ or Artistic
@@ -27,6 +27,7 @@ BuildRequires: perl(bytes)
 BuildRequires: perl(namespace::clean)
 BuildRequires: perl(ok)
 Requires: perl(Module::Find)
+Requires: perl(namespace::clean)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
