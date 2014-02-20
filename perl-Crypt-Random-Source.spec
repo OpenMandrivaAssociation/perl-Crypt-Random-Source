@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Release:	6
 
 Summary:	Base class for random devices
 License:	GPL+ or Artistic
@@ -21,6 +21,7 @@ BuildRequires:	perl(IO::File)
 BuildRequires:	perl(IO::Handle)
 BuildRequires:	perl(IO::Select)
 BuildRequires:	perl(Module::Find)
+BuildRequires:	perl(Module::Implementation)
 BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::More)
@@ -54,21 +55,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README Changes LICENSE META.yml META.json
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sun Apr 24 2011 Funda Wang <fwang@mandriva.org> 0.70.0-4mdv2011.0
-+ Revision: 658206
-- more runtime req
-
-* Sun Apr 24 2011 Funda Wang <fwang@mandriva.org> 0.70.0-3
-+ Revision: 658166
-- add runtime req
-
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.70.0-2
-+ Revision: 656896
-- rebuild for updated spec-helper
-
-* Wed Jan 26 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.70.0-1
-+ Revision: 633024
-- import perl-Crypt-Random-Source
-
