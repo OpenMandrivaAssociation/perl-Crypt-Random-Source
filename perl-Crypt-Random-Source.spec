@@ -1,15 +1,15 @@
 %define upstream_name    Crypt-Random-Source
-%define upstream_version 0.07
+%define upstream_version 0.14
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	8
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Base class for random devices
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/karenetheridge/Crypt-Random-Source
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Crypt-Random-Source-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
