@@ -1,15 +1,13 @@
 %define upstream_name    Crypt-Random-Source
-%define upstream_version 0.14
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.14
+Release:	2
 
 Summary:	Base class for random devices
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/karenetheridge/Crypt-Random-Source
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Crypt-Random-Source-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Crypt-Random-Source-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -40,7 +38,7 @@ See the Crypt::Random::Source::Factory manpage for a more powerful way to
 locate sources, and the various sources for specific implementations.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
